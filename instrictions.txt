@@ -1,0 +1,10 @@
+npx create-react-app project_name
+cd project_name
+code . //optional
+npm start
+http://localhost:3000/   - on browser
+
+npm i styled-components
+npm i react-router-dom
+
+vscode-styled-components //extension
