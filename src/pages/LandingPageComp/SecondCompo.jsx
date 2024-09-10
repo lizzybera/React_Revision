@@ -1,26 +1,26 @@
 import React from 'react'
 import styled from 'styled-components'
-import pics from "../../assets/image-transform.jpg"
+import pics from "../../assets/image-stand-out.jpg"
 
-const FirstComponents = () => {
+const SecondComp = () => {
   return (
     <Container>
+        <Right>
+        <Image src={pics} alt='Image' />
+      </Right>
+
       <Left>
         <MainLeft>
-          <BigText>Transform your Brand</BigText>
+          <BigText>Stand Out to the right Audience</BigText>
           <SmallText>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati atque non modi magnam nemo distinctio, porro repudiandae! Lorem ipsum dolor sit amet.</SmallText>
           <LearnMore>Learn More</LearnMore>
         </MainLeft>
       </Left>
-
-      <Right>
-        <Image src={pics} alt='Image' />
-      </Right>
     </Container>
   )
 }
 
-export default FirstComponents
+export default SecondComp
 
 
 const Image = styled.img`

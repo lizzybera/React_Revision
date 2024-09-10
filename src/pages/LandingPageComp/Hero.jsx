@@ -10,6 +10,26 @@ export const Hero = () => {
     </Container>
   )
 }
+// export const Hero2 = () => {
+//   return (
+//     <Container>
+//         <Text>We are creative</Text>
+//         <Image src={pics} />
+//     </Container>
+//   )
+// }
+// export const Hero3 = () => {
+//   return (
+//     <Container>
+//         <Text>We are creative</Text>
+//         <Image src={pics} />
+//     </Container>
+//   )
+// }
+
+export default Hero
+
+
 
 const Image = styled.img`
 width: 100%;
