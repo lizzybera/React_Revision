@@ -1,17 +1,45 @@
 import React from "react"
+import { Link } from "react-router-dom"
 import styled from "styled-components"
+import { useState } from "react"
 
 const Header = () =>{
+    const [toggle, setToggle] = useState(false)
+
+    const onToggled = () =>{
+        setToggle(!toggle)
+        // console.log(toggle, "toggle")
+    }
+
+    console.log(toggle, "toggle");
+    
+// if (condition) {
+    
+// } else {
+    
+// }
+
     return (
         <Container>
             <Main>
-                <Logo>SunnySide</Logo>
+                <Logo 
+                onClick={()=>{
+                    onToggled()
+                }}
+                >SunnySide</Logo>
                 <Navs>
-                    <Nav>About</Nav>
-                    <Nav>Services</Nav>
-                    <Nav>Product</Nav>
+                    <Nav to="/about" >About</Nav>
+                    <Nav to="/">Services</Nav>
+                    <Nav to="/">Product</Nav>
+                    {/* <Link to="/about"> Second About</Link> */}
 
-                    <Button>Contact</Button>
+                    {/* condition ? true : false */}
+
+                    <Button>
+                        {
+                           toggle ? ("Contact") : ("Click")
+                        }
+                    </Button>
                 </Navs>
             </Main>
         </Container>
@@ -31,13 +59,16 @@ const Button = styled.div`
 
     /* :hover  {
         cursor: pointer;
+        color: yellow;
     } */
 `
 
-const Nav = styled.div`
+const Nav = styled(Link)`
     font-size: 15px;
     font-weight: 500;
     cursor: pointer;
+    color: white;
+    text-decoration: none;
 `
 
 const Navs = styled.div`
