@@ -4,7 +4,7 @@ import styled from "styled-components"
 import { useState } from "react"
 
 const Header = () =>{
-    const [toggle, setToggle] = useState(false)
+    const [toggle, setToggle] = useState()
 
     const onToggled = () =>{
         setToggle(!toggle)
@@ -35,11 +35,14 @@ const Header = () =>{
 
                     {/* condition ? true : false */}
 
-                    <Button>
+                    <Button to="/sign-in">
+                        Log In
+                    </Button>
+                    {/* <Button>
                         {
                            toggle ? ("Contact") : ("Click")
                         }
-                    </Button>
+                    </Button> */}
                 </Navs>
             </Main>
         </Container>
@@ -48,7 +51,7 @@ const Header = () =>{
 
 export default Header
 
-const Button = styled.div`
+const Button = styled(Link)`
     padding: 12px 22px;
     background-color: white;
     color: black;
@@ -56,6 +59,7 @@ const Button = styled.div`
     font-size: 16px;
     font-weight: 500;
     cursor: pointer;
+    text-decoration: none;
 
     /* :hover  {
         cursor: pointer;
