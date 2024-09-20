@@ -86,7 +86,10 @@ justify-content: center;
 margin: 30px 0px;
 font-weight: 700;
 font-size: 20px;
-cursor: pointer;
+
+&:hover{
+    cursor: pointer;
+}
 
 `
 
@@ -98,10 +101,10 @@ outline: none;
 border: none;
 height: 70%;
 
-/* ::placeholder{
+&::placeholder{
     font-size: 30px;
-    color : blue;
-} */
+    /* color : blue; */
+}
 
 `
 

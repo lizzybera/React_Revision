@@ -4,6 +4,8 @@ import LandingPage from "../pages/LandingPage"
 import AboutPage from "../pages/AboutPage"
 import Register from "../pages/auth/Register"
 import SignIn from "../pages/auth/SignIn"
+import Counter from "../pages/Counter"
+import ObjectAsArray from "../pages/ObjectAsArray"
 
 export const MainRoute = createBrowserRouter([
     {
@@ -27,5 +29,13 @@ export const MainRoute = createBrowserRouter([
     {
         path : "/sign-in",
         element : <SignIn />
-    }
+    },
+    {
+        path : "/counter",
+        element : <Counter />
+    },
+    {
+        path : "/object",
+        element : <ObjectAsArray />
+    },
 ])
