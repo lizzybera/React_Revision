@@ -6,6 +6,7 @@ import Register from "../pages/auth/Register"
 import SignIn from "../pages/auth/SignIn"
 import Counter from "../pages/Counter"
 import ObjectAsArray from "../pages/ObjectAsArray"
+import UseEffect from "../pages/UseEffect"
 
 export const MainRoute = createBrowserRouter([
     {
@@ -37,5 +38,9 @@ export const MainRoute = createBrowserRouter([
     {
         path : "/object",
         element : <ObjectAsArray />
+    },
+    {
+        path : "/effect",
+        element : <UseEffect />
     },
 ])
