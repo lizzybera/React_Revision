@@ -5,7 +5,7 @@ import { BsTwitter, BsPinterest  } from "react-icons/bs"
 
 const Footer = () =>{
     return (
-        <Container>
+        <Container id="footer">
            <Logo>sunnyside</Logo>
 
            <Navs>

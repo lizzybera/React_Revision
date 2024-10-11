@@ -4,7 +4,7 @@ import pics from "../../assets/image-header.jpg"
 
 export const Hero = () => {
   return (
-    <Container>
+    <Container id='hero'>
         <Text>We are creative</Text>
         <Image src={pics} />
     </Container>
